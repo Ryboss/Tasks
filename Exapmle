@@ -1,0 +1,18 @@
+tasks = {
+
+}
+
+
+
+
+def add_todo(date,task):
+    if date in tasks:
+        tasks[date].append(task)
+    else:
+      tasks[date].append(task)
+      
+    print(tasks)
+add_todo(31.12.2021,'kjnksdns')
+add_todo('27.12.2021','dfsdf')
+add_todo('12.12.2021','mklndjk')
+add_todo('31.12.2021','kjnksdns2')
