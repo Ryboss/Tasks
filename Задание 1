@@ -1,0 +1,10 @@
+def count_letter(latter,slov):
+  i = 0
+  for word in slov:
+    
+    if latter in word:
+      i += 1
+  print(i)
+
+count_letter('c',['python', 'c++', 'c', 'scala', 'java'])
+count_letter('a',['python', 'c++', 'c', 'scala', 'java'])
