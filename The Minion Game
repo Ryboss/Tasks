@@ -1,6 +1,6 @@
 def minion_game(string):
     
-    glas = ('a','e','i','o','u','A','E','I',        'O','U')
+    glas = ('a','e','i','o','u','A','E','I','O','U')
     kevin = 0
     stuart = 0
     for i in range(len(s)):
