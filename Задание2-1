@@ -1,0 +1,56 @@
+HELP = """
+help - напечатать справку по программе
+add - добавить задачу в свой список
+show - показать все свои задачи
+exit - выход из программы"""
+run = True
+
+tasks = []
+today = []
+tomorrow = []
+other = []
+ 
+
+while run:
+  command = input("Введите команду: ")
+
+  #HELP
+
+  if command == 'help':
+    print(HELP)
+
+    #ADD
+
+  elif command == "add":
+    day = input('Введите дату вывполнения задачи: ')
+    task = input("Введите задачу: ")
+    tasks.append(task)
+    print('Задача добавлена!')
+    if day == 'Сегодня':
+      today.append(task)
+    elif day == 'Завтра':
+      tomorrow.append(task)
+    else:
+      other.append(task)
+
+    #SHOW
+
+  elif command ==  "show":
+    day = input('Введите дату вывполнения задачи: ')
+    if day == 'Сегодня':
+      print(today)
+    elif day == 'Завтра':
+      print(tomorrow)
+    else:
+      print(other)
+    
+    #EXIT
+
+  elif command == 'exit':
+    print ('Спасибо за использование! До свидания')
+    break
+  else:
+    print('Неизвестная команда!')
+    print('До свидания!')
+    break
+   
