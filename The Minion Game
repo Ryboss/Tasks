@@ -1,0 +1,19 @@
+def minion_game(string):
+    
+    glas = ('a','e','i','o','u','A','E','I',        'O','U')
+    kevin = 0
+    stuart = 0
+    for i in range(len(s)):
+        if s[i] in glas:
+            kevin+=(len(s)-i)
+        else:
+            stuart+=(len(s)-i)
+    if kevin>stuart:
+        print("Kevin " + str(kevin))
+    elif stuart>kevin:
+        print("Stuart " + str(stuart))
+    else:
+        print("Draw")
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
